@@ -1,1 +1,1 @@
-https://github.com/SergeySherstobitov/ono-tebe-nado.git  
+git@github.com:SergeySherstobitov/posmotri_v_okno.git
