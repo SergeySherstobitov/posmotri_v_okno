@@ -65,12 +65,15 @@ video {
   position: relative;
   inline-size: 711px;
   margin: 0 0 11px;
+  height: 386px;
 }
 
 .search-form {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 41px;
+  padding: 3px 0px 3px 0px;
+  
 }
 
 .result__video {
@@ -101,9 +104,13 @@ video {
   width: fit-content;
 }
 
-.search-form__label:hover {
+.search-form__label:hover.search-form__label:hover {
   text-decoration: underline 1px #fff;
-  text-underline-offset: 5px;
+  text-underline-offset: 2px;
+}
+
+.search-form__label:hover.search-form__label-text{
+  text-decoration: underline; 
 }
 
 .search-form__label:has(:focus-visible) {
@@ -166,8 +173,8 @@ video {
 }
 
 .button {
-  border: 1px solid #fff;
-  padding: 6px 0;
+  border: 1px solid currentColor;
+  padding: 3px 0;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 700;
@@ -219,13 +226,8 @@ video {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 298px;
-  scrollbar-width: none;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__list-item:not(:last-child) {
@@ -272,6 +274,10 @@ video {
   line-height: 1;
   text-transform: uppercase;
   hyphens: auto;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -279,6 +285,7 @@ video {
   color: #fff;
   font-weight: 400;
   line-height: 16.2px;
+  max-width: 200px;
 }
 
 .content__video-card-thumbnail {
