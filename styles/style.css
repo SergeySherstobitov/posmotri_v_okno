@@ -104,13 +104,8 @@ video {
   width: fit-content;
 }
 
-.search-form__label:hover.search-form__label:hover {
-  text-decoration: underline 1px #fff;
-  text-underline-offset: 2px;
-}
-
-.search-form__label:hover.search-form__label-text{
-  text-decoration: underline; 
+.search-form__label:hover .search-form__label-text{
+  text-decoration: underline 1px #fff;; 
 }
 
 .search-form__label:has(:focus-visible) {
