@@ -105,7 +105,7 @@ video {
 }
 
 .search-form__label:hover .search-form__label-text{
-  text-decoration: underline 1px #fff;; 
+  text-decoration: underline; 
 }
 
 .search-form__label:has(:focus-visible) {
